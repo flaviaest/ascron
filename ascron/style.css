@@ -1,0 +1,204 @@
+body {
+    font-family: Roboto, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+header {
+    background-color: #b5208b; /* cor de fundo rosa */
+    color: #fff;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px; /* ajuste o padding conforme necessário */
+    position: relative;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h3{
+    font-size: 25px;
+}
+.logo {
+    width: 80px; /* ajuste o tamanho conforme necessário */
+    height: auto;
+    margin: 0 15px; /* ajuste o margin conforme necessário */
+}
+
+main {
+    padding: 1rem;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+    width: calc(33% - 2rem);
+    max-width: 300px; /* limitando a largura max */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-item h2 {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-item p {
+    color: #777;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.product-item .price {
+    color: #b4248c;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+main button{
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para o contêiner do botão */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem; /* Ajuste conforme necessário */
+}
+
+button {
+    /* Seus estilos para o botão */
+    font-family: inherit;
+    font-size: 18px;
+    background: linear-gradient(to bottom, #1eff71 0%, #25D366 100%);
+    color: white;
+    padding: 0.8em 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button span {
+    display: block;
+    margin-left: 0.4em;
+    transition: all 0.3s;
+}
+
+button img {
+    width: 35px;
+    height: 35px;
+    fill: white;
+    transition: all 0.3s;
+}
+
+a{
+    color: #fff;
+}
+button .img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0.5em;
+    transition: all 0.3s;
+}
+
+button:hover .img-wrapper {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+button:hover img {
+    transform: rotate(45deg);
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #b5208b;
+    color: white;
+}
+
+footer a {
+    margin: 0 5px;
+}
+
+a img {
+    width: 50px;
+    height: auto;
+}
+
+/* Media Queries para Responsividade */
+
+/* Ajustes para dispositivos móveis (celulares e tablets) */
+@media (max-width: 768px) {
+    .product-item {
+        width: calc(50% - 2rem); /* 2 colunas em dispositivos móveis */
+    }
+
+    .logo {
+        width: 60px; /* ajuste para tamanhos menores */
+    }
+
+    header {
+        font-size: 16px; /* ajuste do tamanho da fonte para dispositivos móveis */
+    }
+}
+
+/* Ajustes para dispositivos muito pequenos (smartphones) */
+@media (max-width: 480px) {
+    .product-item {
+        width: calc(100% - 2rem); /* 1 coluna em dispositivos muito pequenos */
+    }
+
+    .logo {
+        width: 50px; /* ajuste para tamanhos menores */
+    }
+
+    header {
+        font-size: 14px; /* ajuste do tamanho da fonte para dispositivos muito pequenos */
+    }
+}
+ 
